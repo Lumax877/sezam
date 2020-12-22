@@ -1,0 +1,24 @@
+%Bartosz Ochtabiński
+\documentclass[12pt] {article}
+\usepackage{boldline,multirow,}
+\usepackage[table]{xcolor}
+
+\begin{document}
+\noindent{\Huge Oceny}\\[20pt]
+\begin{tabular}{|l|r|r|r|r|} 
+\hline
+Student & \multicolumn{4}{c|}{Oceny} \\ 
+\hline
+\rowcolor[HTML]{d0d0d0}
+Temat & WWW & SVG & LaTeX & Matlab \\ 
+\hline
+Janek Kos & 5.0 & 5.0 & 5 & 5.0 \\ 
+\hline
+Hans Kloss & 4.5 & 4 & 3.5 & 5.0 \\ 
+\hline
+\multirow{2}{*}{Pinokio} & 2.0 & 2.5 & 3= & 2.5 \\
+\clineB{2-5}{2.5}
+& 1.5 & 2.0 & 3.5 & 4.0 \\ 
+\hline
+\end{tabular}
+\end{document}

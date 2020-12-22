@@ -1,0 +1,34 @@
+%Bartosz Ochtabiński
+\documentclass{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+
+\section{Zero}
+
+Footnote numer zero\footnote[0]{zerowy}
+\newpage
+\section{Pierwszy}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat\footnote{jakiś footnote} nulla pariatur. Excepteur sint occaecat cupidatat non\footnote{drugi footnote} proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+\newpage
+
+\section{Drugi}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat\footnote{trzeci footnote} nulla pariatur. Excepteur sint occaecat cupidatat non\footnote{czwarty footnote} proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+\setcounter{footnote}{0}
+\newpage
+
+\section{Trzeci}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat\footnote{znowu pierwszy footnote} nulla pariatur. Excepteur sint occaecat cupidatat non\footnote{a tu drugi footnote} proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+\newpage
+\setcounter{footnote}{0}
+\renewcommand{\thefootnote}{\Roman{footnote}}
+
+\section{Czwarty}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat\footnote{Rzymski footnote} nulla pariatur. Excepteur sint occaecat cupidatat non\footnote{a tu drugi} proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+
+
+\end{document}
